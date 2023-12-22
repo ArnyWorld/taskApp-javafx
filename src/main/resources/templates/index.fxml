@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arni.task.controllers.IndexController">
+   <children>
+      <Label layoutX="211.0" layoutY="30.0" text="Task System" textFill="#28b1c3">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="taskTable" layoutX="77.0" layoutY="100.0" prefHeight="200.0" prefWidth="447.0">
+        <columns>
+          <TableColumn fx:id="idColumnTask" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameColumnTask" prefWidth="111.0" text="Task" />
+            <TableColumn fx:id="managerColumnTask" prefWidth="152.0" text="Manager" />
+            <TableColumn fx:id="statusColumnTask" prefWidth="108.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
